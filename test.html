@@ -1,0 +1,53 @@
+<!-- tests.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tests — Hello My Special Star ✨</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">🌟</div>
+      <div class="title">
+        <h1 id="site-slogan-small2">Hello My Special Star ✨</h1>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="/notes">Notes</a>
+      <a href="/tests">Tests</a>
+      <button id="lang-toggle-3" class="btn">हिन्दी</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="test-controls">
+      <label>Class:
+        <select id="test-class"></select>
+      </label>
+      <label>Subject:
+        <select id="test-subject"></select>
+      </label>
+      <label>Chapter:
+        <select id="test-chapter"></select>
+      </label>
+      <button id="start-test" class="btn primary">Start Test</button>
+    </section>
+
+    <section id="quiz-area" class="quiz-area">
+      <div id="quiz-card"></div>
+      <div id="report-card" class="report-card" style="display:none;"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Hello My Special Star ✨</p>
+  </footer>
+
+  <script src="/static/js/script.js"></script>
+</body>
+</html>
