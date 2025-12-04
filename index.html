@@ -1,0 +1,99 @@
+
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hello My Special Star  Learning Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      
+      <div class="title">
+        <h1 id="site-slogan">Hello My Special Star </h1>
+        <p id="site-subtitle">Fast Friendly  For Classes 1–12</p>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="/notes">Notes</a>
+      <a href="/tests">Tests</a>
+      <a href="/#3d">3D</a>
+      <a href="/#qa">Q&A</a>
+      <button id="lang-toggle" class="btn">हिन्दी</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2 id="hero-title">Learn. Play. Grow.</h2>
+      <p id="hero-desc">Chapter-wise notes, interactive 3D models, quizzes, and short explainers — all in English and Hindi.</p>
+      <div class="cta-row">
+        <a href="/notes" class="btn primary">Explore Notes</a>
+        <a href="/tests" class="btn outline">Try a Test</a>
+      </div>
+    </section>
+
+    <section class="cards-grid">
+      <div class="card">
+        <h3>Subjects</h3>
+        <p>Science • Math • English • Hindi • Sanskrit • Computer • Python</p>
+        <a class="btn small" href="/notes">Open Subjects</a>
+      </div>
+
+      <div class="card">
+        <h3>3D Learning</h3>
+        <p>Interactive 3D models & animated explainers.</p>
+        <a class="btn small" href="#3d">View 3D</a>
+      </div>
+
+      <div class="card">
+        <h3>Chapter-wise Tests</h3>
+        <p>MCQs, instant scoring, report card.</p>
+        <a class="btn small" href="/tests">Start Quiz</a>
+      </div>
+
+      <div class="card">
+        <h3>Python Corner</h3>
+        <p>Beginner-friendly Python lessons & exercises.</p>
+        <a class="btn small" href="/notes?subject=python">Start Python</a>
+      </div>
+    </section>
+
+    <section id="3d" class="three-section">
+      <h2>3D Model Viewer</h2>
+      <div class="three-wrapper">
+        <!-- Three.js canvas inserted by script.js -->
+        <div id="threejs-canvas" class="three-canvas"></div>
+
+        <div class="video-area">
+          <h4>Short Explainer (Example)</h4>
+          <iframe width="320" height="180" src="https://www.youtube.com/embed/5MgBikgcWnY" title="explainer sample" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="qa" class="qa-section">
+      <h2>Q & A — Important Questions</h2>
+      <div class="qa-filters">
+        <select id="qa-class"></select>
+        <select id="qa-subject"></select>
+        <select id="qa-chapter"></select>
+        <button id="qa-load" class="btn small">Load</button>
+      </div>
+      <div id="qa-list" class="qa-list"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Hello My Special Star ✨ — Built for students (Classes 1–12)</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+  <script src="/static/js/script.js"></script>
+</body>
+</html>
